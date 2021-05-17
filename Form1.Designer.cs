@@ -208,6 +208,7 @@ namespace AdventureGame
             this.healthOutput.Size = new System.Drawing.Size(157, 36);
             this.healthOutput.TabIndex = 14;
             this.healthOutput.Text = "Health: 10";
+            this.healthOutput.Visible = false;
             // 
             // Form1
             // 

@@ -32,6 +32,7 @@ namespace AdventureGame
         bool spiritWater = false;
         bool littleBoy = false;
         int health = 10;
+        int successPercent;
             
         //resources
         SoundPlayer musicPlayer = new SoundPlayer(Properties.Resources.forest_sound_1);
@@ -58,6 +59,7 @@ namespace AdventureGame
             option2Output.Visible = true;
             option1Button.Visible = true;
             option2Button.Visible = true;
+            healthOutput.Visible = true;
 
             DisplayPage();            
         }
@@ -102,13 +104,13 @@ namespace AdventureGame
                     health = health - 3;
                 }
                 HealthCheck();
-                page = 12;                
+                page = 12;
             }
             else if (page == 11)
             {
                 health = health - 1;
                 HealthCheck();
-                page = 14;                
+                page = 14;
             }
             else if (page == 14) { page = 22; }
             else if (page == 15) { page = 22; }
@@ -137,6 +139,7 @@ namespace AdventureGame
             else if (page == 25) { page = 26; }
             else if (page == 26) { page = 1; }
             else if (page == 27) { page = 1; }
+            else if (page == 98) { page = 1; }
 
             DisplayPage();
         }
@@ -206,8 +209,17 @@ namespace AdventureGame
             }
             else if (page == 22)
             {
+                successPercent = randGen.Next(1, 101);
 
+                if (successPercent > 30) { page = 24; }
+                else { page = 25; }
             }
+            else if (page == 23) { page = 99; }
+            else if (page == 24) { page = 99; }
+            else if (page == 25) { page = 27; }
+            else if (page == 26) { page = 99; }
+            else if (page == 27) { page = 99; }
+            else if (page == 98) { page = 99; }
 
              DisplayPage();
             }
@@ -217,9 +229,9 @@ namespace AdventureGame
             if (page == 5) { page = 7; }
             else if (page == 22)
             {
-                int percent = randGen.Next(1, 101);
+                successPercent = randGen.Next(1, 101);
 
-                if (percent > 30) { page = 24; }
+                if (successPercent > 30) { page = 24; }
                 else { page = 25; }
             }
 
@@ -278,7 +290,6 @@ namespace AdventureGame
                     nextButton.Visible = true;
                     break;
                 default:
-
                     break;
             }
         }                
@@ -287,7 +298,7 @@ namespace AdventureGame
         {
             if (health == 0)
             {
-                page = 97;
+                page = 98;
             }
         }
     }
