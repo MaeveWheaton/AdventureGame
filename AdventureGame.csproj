@@ -104,5 +104,59 @@
   <ItemGroup>
     <None Include="Resources\forest_walking.wav" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\angry_dragon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\treasure.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\armoured_dwarf.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slime_monster.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tunnel_fork_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tunnel_fork.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain_entrance.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain_door_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon_treasure.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mountain_door.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\glory_map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\main_map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\slime.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon_growl_2.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon_growl.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dragon_breathe_fire.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\revenge_map.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\riches_map.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

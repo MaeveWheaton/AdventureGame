@@ -42,7 +42,9 @@ namespace AdventureGame
             this.titleLabel = new System.Windows.Forms.Label();
             this.nextButton = new System.Windows.Forms.Button();
             this.healthOutput = new System.Windows.Forms.Label();
+            this.mapImageOutput = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.imageOutput)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapImageOutput)).BeginInit();
             this.SuspendLayout();
             // 
             // imageOutput
@@ -210,6 +212,17 @@ namespace AdventureGame
             this.healthOutput.Text = "Health: 10";
             this.healthOutput.Visible = false;
             // 
+            // mapImageOutput
+            // 
+            this.mapImageOutput.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("mapImageOutput.BackgroundImage")));
+            this.mapImageOutput.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.mapImageOutput.Location = new System.Drawing.Point(723, 311);
+            this.mapImageOutput.Name = "mapImageOutput";
+            this.mapImageOutput.Size = new System.Drawing.Size(267, 199);
+            this.mapImageOutput.TabIndex = 15;
+            this.mapImageOutput.TabStop = false;
+            this.mapImageOutput.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(240F, 240F);
@@ -217,6 +230,7 @@ namespace AdventureGame
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1024, 1033);
+            this.Controls.Add(this.mapImageOutput);
             this.Controls.Add(this.healthOutput);
             this.Controls.Add(this.nextButton);
             this.Controls.Add(this.storyOutput);
@@ -234,6 +248,7 @@ namespace AdventureGame
             this.Name = "Form1";
             this.Text = "Choose Your Adventure";
             ((System.ComponentModel.ISupportInitialize)(this.imageOutput)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.mapImageOutput)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -253,6 +268,7 @@ namespace AdventureGame
         private System.Windows.Forms.Label titleLabel;
         private System.Windows.Forms.Button nextButton;
         private System.Windows.Forms.Label healthOutput;
+        private System.Windows.Forms.PictureBox mapImageOutput;
     }
 }
 
